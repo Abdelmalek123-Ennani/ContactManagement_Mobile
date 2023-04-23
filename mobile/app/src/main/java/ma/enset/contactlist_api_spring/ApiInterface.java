@@ -10,7 +10,7 @@ import retrofit2.http.POST;
 
 public interface ApiInterface {
 
+
     @GET("/contacts")
     Call<List<Contact>> getContacts();
-
 }

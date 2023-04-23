@@ -22,7 +22,7 @@ public class MobileBackendApplication {
             for (int i=0; i< 10; i++) {
                 Contacts contact = new Contacts((int) (Math.random() * 10 + 10000),
                         "Abdelmalek",
-                        "last_",
+                        "Ennani",
                         "test@email.com",
                         "067834120954"
                         );

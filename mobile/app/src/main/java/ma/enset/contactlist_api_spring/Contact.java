@@ -2,13 +2,13 @@ package ma.enset.contactlist_api_spring;
 
 public class Contact {
 
-    private long id;
+    private int id;
     private String nom;
     private String prenom;
     private String email;
     private String tel;
 
-    public Contact(Long id, String nom, String prenom, String email, String tel) {
+    public Contact(int id, String nom, String prenom, String email, String tel) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -24,8 +24,8 @@ public class Contact {
         this.tel = c.tel;
     }
 
-    public long getId() {return id;}
-    public void setId(Long id) {this.id = id;}
+    public int getId() {return id;}
+    public void setId(int id) {this.id = id;}
     public String getNom() {
         return nom;
     }

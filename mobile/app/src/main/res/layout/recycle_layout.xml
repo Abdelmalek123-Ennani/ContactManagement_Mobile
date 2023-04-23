@@ -30,7 +30,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/picView"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:padding="5dp"
@@ -47,7 +47,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
                 android:textColor="#FFF"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/picView"
                 app:layout_constraintTop_toTopOf="parent"
                 />
 
@@ -67,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/picView"
                 app:layout_constraintTop_toBottomOf="@+id/prenom"
                 android:textColor="#FFF"
                 />
@@ -78,8 +78,21 @@
                 android:layout_height="wrap_content"
                 android:textColor="#FFF"
                 android:layout_marginStart="15dp"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/picView"
                 app:layout_constraintTop_toBottomOf="@+id/email"
+                />
+
+            <ImageView
+                android:id="@+id/callView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/baseline_call_24"
+                android:contentDescription="avatar"
+                android:clickable="true"
                 />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

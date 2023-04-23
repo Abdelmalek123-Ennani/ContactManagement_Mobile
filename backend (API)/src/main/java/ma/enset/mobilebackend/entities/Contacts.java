@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data @NoArgsConstructor @AllArgsConstructor @Builder
 public class Contacts {
-
     @Id
     private int id;
     private String nom;

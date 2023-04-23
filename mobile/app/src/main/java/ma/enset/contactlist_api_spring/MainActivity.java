@@ -47,12 +47,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        RecyclerView recyclerView = findViewById(R.id.contactRecycleView);
         fetchDataFromAPI();
-
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(this , contacts);
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
 
@@ -62,11 +57,17 @@ public class MainActivity extends AppCompatActivity {
         call.enqueue(new Callback<List<Contact>>() {
             @Override
             public void onResponse(Call<List<Contact>> call, Response<List<Contact>> response) {
-                List<Contact> contactList = response.body();
-                for (int i = 0; i < contactList.size( ); i++) {
+              List<Contact> contactList = response.body();
+                for (int i = 0; i < contactList.size(); i++) {
                     Contact c=new Contact(contactList.get(i));
                     contacts.add(c);
                 }
+
+                RecyclerView recyclerView = findViewById(R.id.contactRecycleView);
+                RecyclerViewAdapter adapter = new RecyclerViewAdapter(MainActivity.this, contacts);
+                recyclerView.setAdapter(adapter);
+                recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+
                 Log.i(MainActivity.class.getSimpleName(), response.body().toString());
             }
 
