@@ -6,4 +6,7 @@ By using Spring Boot to create the API, I ensured that the app operates smoothly
 
 Overall, this mobile application provides a valuable service to users by offering an easy and convenient way to manage their contacts. The use of Spring Boot to create the API ensures the app operates smoothly, making it an efficient and reliable solution for contact list management. Great job on creating this app!
 
+<b>Technical architecture of the application</b> : 
+
+
 <img src='https://raw.githubusercontent.com/Abdelmalek123-Ennani/ContactManagement_Mobile/master/architecture%20(1).png' />
